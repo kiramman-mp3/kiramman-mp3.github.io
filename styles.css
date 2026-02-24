@@ -145,34 +145,43 @@ header {
 
 /* Card contenedora */
 .content-card {
-    background: var(--card-bg-light);
+    background: var(--text-dim);
     padding: 50px;
     border-radius: 25px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
 }
 
 /* ================= SOBRE MÍ ================= */
+
+.about-card {
+    text-align: center;
+}
+
 .about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-text {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .about-text p {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     font-size: 1.1rem;
-    color: var(--text-dim);
+    color: var(--text-dark);
 }
 
 .about-text strong {
     color: var(--text-dark);
+    font-weight: 700;
 }
 
 /* ================= TECNOLOGÍAS ================= */
 .carousel-section {
-    padding: 80px 0;
+    padding: 80px 20px;
     background: var(--bg-dark);
-    color: var(--text-light);
 }
 
 .carousel-section h2 {
@@ -181,7 +190,8 @@ header {
 
 .carousel {
     overflow: hidden;
-    width: 100%;
+    margin-top: 40px;
+    width: 120%;
     display: flex;
     align-items: center;
 }
@@ -190,13 +200,11 @@ header {
     display: flex;
     gap: 80px;
     width: max-content;
-    /* Crítico para animación infinita */
-    animation: scroll 30s linear infinite;
+    animation: scroll 20s linear infinite;
 }
 
 .carousel-track:hover {
     animation-play-state: paused;
-    /* Opcional: pausa al pasar el mouse */
 }
 
 .carousel img {
@@ -247,7 +255,7 @@ header {
 }
 
 .cert-text p {
-    color: var(--text-dim);
+    color: var(--bg-blue);
     font-size: 1.1rem;
 }
 
@@ -321,4 +329,103 @@ footer {
         text-align: center;
         gap: 30px;
     }
+}
+
+/* ================= NAV ================= */
+.site-nav {
+    /* Top-right horizontal nav */
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 12px;
+    z-index: 1200;
+    background: rgba(15,23,42,0.6);
+    border-radius: 12px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 10px 30px rgba(2,6,23,0.45);
+    max-width: calc(100vw - 24px);
+}
+
+.site-nav .nav-links {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.site-nav .nav-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    border-radius: 10px;
+    background: transparent;
+    color: rgba(248,250,252,0.95);
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.14s ease, box-shadow 0.14s ease, background 0.12s ease;
+}
+
+.site-nav .nav-links a:hover {
+    transform: translateY(-3px);
+    background: rgba(255,255,255,0.03);
+    box-shadow: 0 10px 24px rgba(2,6,23,0.35);
+}
+/* Hide the nav entirely on small screens */
+@media (max-width: 768px) {
+    .site-nav { display: none; }
+}
+
+/* Compensar navbar fija */
+.hero-container {
+    padding-top: 40px;
+}
+
+/* Footer adjustments */
+footer {
+    text-align: center;
+    padding: 28px 20px;
+    background: linear-gradient(180deg, rgba(15,17,26,0.95), rgba(15,17,26,0.98));
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+footer a { color: var(--accent); text-decoration: none; }
+
+/* Focus visible for accessibility */
+a:focus, .button:focus, .nav-cta:focus {
+    outline: 3px solid rgba(59,130,246,0.22);
+    outline-offset: 2px;
+}
+
+/* ================= WHATSAPP FLOATING BUTTON ================= */
+.whatsapp-button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg,#25D366,#128C7E);
+    color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 12px 30px rgba(18,28,20,0.25);
+    z-index: 1200;
+    text-decoration: none;
+    transition: transform 0.16s ease, box-shadow 0.16s ease;
+}
+
+.whatsapp-button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 38px rgba(18,28,20,0.32);
+}
+
+.whatsapp-button svg { display: block; }
+
+@media (max-width: 480px) {
+    .whatsapp-button { width: 56px; height: 56px; right: 14px; bottom: 14px; }
 }
