@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Johan Rodríguez - Software Engineer & Estudiante de FISEI-UTA. Especialista en Full-stack con suficiencia en inglés C1-.">
+    <meta name="description"
+        content="Johan Rodríguez - Software Engineer & Estudiante de FISEI-UTA. Especialista en Full-stack con suficiencia en inglés C1-.">
     <title>Johan Rodríguez | Software Engineer Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -13,11 +14,56 @@
     <!-- Spatial Navigation -->
     <nav class="site-nav" aria-label="Navegación principal">
         <div class="nav-links">
-            <a href="#home" class="active">Inicio</a>
-            <a href="#about">Perfil</a>
-            <a href="#education">Formación</a>
-            <a href="#projects">Proyectos</a>
-            <a href="#certifications">Logros</a>
+            <div class="nav-indicator"></div>
+            <a href="#home" class="active">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-home">
+                    <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                    <polyline points="9 22 9 12 15 12 15 22" />
+                </svg>
+                <span>Inicio</span>
+            </a>
+            <a href="#about">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-user-round">
+                    <circle cx="12" cy="8" r="5" />
+                    <path d="M20 21a8 8 0 0 0-16 0" />
+                </svg>
+                <span>Perfil</span>
+            </a>
+            <a href="#education">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-graduation-cap">
+                    <path
+                        d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.599 9.084a1 1 0 0 0 .018 1.838l8.57 3.904a2 2 0 0 0 1.628 0l6.544-2.981a1 1 0 0 0 .01 1.764l1.107.503a1 1 0 0 0 1.25-.494l.873-1.8a1 1 0 0 0-.179-.897ZM17 14v4.5a1.5 1.5 0 0 1-1.5 1.5H10A1.5 1.5 0 0 1 8.5 18.5V14" />
+                    <path d="M12 14v8" />
+                </svg>
+                <span>Formación</span>
+            </a>
+            <a href="#projects">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-layout-grid">
+                    <rect width="7" height="7" x="3" y="3" rx="1" />
+                    <rect width="7" height="7" x="14" y="3" rx="1" />
+                    <rect width="7" height="7" x="14" y="14" rx="1" />
+                    <rect width="7" height="7" x="3" y="14" rx="1" />
+                </svg>
+                <span>Proyectos</span>
+            </a>
+            <a href="#certifications">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-award">
+                    <path
+                        d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526" />
+                    <circle cx="12" cy="8" r="6" />
+                </svg>
+                <span>Logros</span>
+            </a>
         </div>
     </nav>
 
@@ -27,8 +73,8 @@
             <div class="hero-content reveal">
                 <h1>Johan<br>Rodríguez</h1>
                 <p>
-                    <strong>Software Engineer</strong> & Estudiante de Ingeniería en Sistemas en la 
-                    <strong>Universidad Técnica de Ambato (FISEI)</strong>. 
+                    <strong>Software Engineer</strong> & Estudiante de Ingeniería en Sistemas en la
+                    <strong>Universidad Técnica de Ambato (FISEI)</strong>.
                     Enfoque en arquitecturas de alto rendimiento y experiencias digitales extraordinarias.
                 </p>
                 <div class="hero-actions">
@@ -38,7 +84,7 @@
                 </div>
             </div>
             <div class="hero-image reveal">
-                <img src="foto.png" alt="Johan Rodríguez - Software Engineer CV Portrait">
+                <img src="assets/foto.png" alt="Johan Rodríguez - Software Engineer CV Portrait">
             </div>
         </div>
     </header>
@@ -48,21 +94,70 @@
         <section class="section" id="about">
             <div class="section-inner">
                 <h2 class="section-title reveal"><span>Perfil</span> Profesional</h2>
-                <div class="content-card reveal">
-                    <div class="about-text">
-                        <p>
-                            Radicado en <strong>Ambato, Ecuador</strong>, me destaco como un desarrollador 
-                            con un enfoque híbrido entre la ingeniería de sistemas y el diseño de 
-                            interfaces de vanguardia. Mi formación en la <strong>UTA</strong> me ha 
-                            permitido dominar tanto el desarrollo de software institucional como la 
-                            creación de herramientas de impacto social.
-                        </p>
-                        <p>
-                            Con más de <strong>250 contribuciones</strong> anuales, mantengo un ritmo 
-                            de aprendizaje constante en tecnologías como <strong>TypeScript, 
-                            PHP, Java y Node.js</strong>, aplicándolas en sistemas de gestión críticos 
-                            y proyectos de impacto social.
-                        </p>
+                <div class="profile-grid reveal">
+                    <!-- Left: Technical Narrative -->
+                    <div class="content-card profile-main">
+                        <div class="about-text">
+                            <h3>Ingeniería & Diseño</h3>
+                            <p>
+                                Radicado en <strong>Quero, Ecuador</strong>, me enfoco en la intersección de la
+                                ingeniería de sistemas y el diseño de interfaces de alto rendimiento. Mi formación
+                                en la <strong>Universidad Técnica de Ambato (UTA)</strong> me ha permitido dominar
+                                arquitecturas robustas y herramientas de impacto social.
+                            </p>
+                            <p>
+                                Mi enfoque se basa en la <strong>resolución proactiva de problemas</strong> y el
+                                aprendizaje continuo, aplicando tecnologías como <strong>TypeScript, PHP y
+                                    Node.js</strong>
+                                para crear productos digitales que no solo funcionen, sino que inspiren.
+                            </p>
+                            <div class="philosophy-grid">
+                                <div class="phi-item">
+                                    <span class="phi-icon">⚡</span>
+                                    <h4>Escalabilidad</h4>
+                                </div>
+                                <div class="phi-item">
+                                    <span class="phi-icon">🎨</span>
+                                    <h4>UX/UI Premium</h4>
+                                </div>
+                                <div class="phi-item">
+                                    <span class="phi-icon">🛡️</span>
+                                    <h4>Seguridad</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Quick Insights / CV Info -->
+                    <div class="profile-stats">
+                        <div class="stat-card reveal">
+                            <div class="stat-icon">📍</div>
+                            <div class="stat-info">
+                                <span>Ubicación</span>
+                                <strong>Quero, Ecuador</strong>
+                            </div>
+                        </div>
+                        <div class="stat-card reveal">
+                            <div class="stat-icon">🎓</div>
+                            <div class="stat-info">
+                                <span>Grado</span>
+                                <strong>Ing. Sistemas (E)</strong>
+                            </div>
+                        </div>
+                        <div class="stat-card reveal">
+                            <div class="stat-icon">🌐</div>
+                            <div class="stat-info">
+                                <span>Inglés</span>
+                                <strong>Nivel C1- (Suficiencia)</strong>
+                            </div>
+                        </div>
+                        <div class="stat-card reveal">
+                            <div class="stat-icon">🚀</div>
+                            <div class="stat-info">
+                                <span>Impacto</span>
+                                <strong>250+ GitHub Contribs</strong>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -72,10 +167,10 @@
         <section class="section" id="education">
             <div class="section-inner edu-container">
                 <h2 class="section-title reveal"><span>Formación</span> Académica</h2>
-                
+
                 <div class="edu-card reveal" style="margin-bottom: 32px;">
                     <div class="edu-logo">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Logo_Universidad_T%C3%A9cnica_de_Ambato.png/800px-Logo_Universidad_T%C3%A9cnica_de_Ambato.png" alt="Logo UTA">
+                        <img src="assets/fisei.png" alt="Logo FISEI">
                     </div>
                     <div class="edu-info">
                         <h3>Universidad Técnica de Ambato</h3>
@@ -85,13 +180,11 @@
                 </div>
 
                 <div class="edu-card reveal">
-                    <div class="edu-logo" style="background: var(--bg-surface);">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="var(--primary)" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
-                        </svg>
+                    <div class="edu-logo">
+                        <img src="assets/cdi.jpg" alt="Logo CDI">
                     </div>
                     <div class="edu-info">
-                        <h3>Sufficiency in English</h3>
+                        <h3>Suficiencia en Inglés</h3>
                         <h4>Centro de Idiomas - Universidad Técnica de Ambato</h4>
                         <p>Certificación de Suficiencia: <strong>Nivel C1-</strong></p>
                     </div>
@@ -105,27 +198,41 @@
                 <h2 class="section-title reveal"><span>Ecosistema</span> Técnico</h2>
                 <div class="carousel reveal">
                     <div class="carousel-track">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="NodeJS">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                            alt="React">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                            alt="NodeJS">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                            alt="TypeScript">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+                            alt="C#">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                            alt="MySQL">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                            alt="MongoDB">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                            alt="Docker">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
-                        
+
                         <!-- Loop duplication -->
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="NodeJS">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                            alt="React">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                            alt="NodeJS">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                            alt="TypeScript">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+                            alt="C#">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                            alt="MySQL">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                            alt="MongoDB">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                            alt="Docker">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
                     </div>
                 </div>
@@ -139,30 +246,44 @@
                 <div class="project-grid">
                     <article class="content-card project-card reveal">
                         <h3>CalcuRescue</h3>
-                        <p>Calculadora inteligente camuflada con funciones de emergencia discretas y sistema de rastreo para situaciones críticas.</p>
+                        <p>Calculadora inteligente camuflada con funciones de emergencia discretas y sistema de rastreo
+                            para situaciones críticas.</p>
                         <div class="badge-group">
                             <span class="badge">JavaScript</span>
                             <span class="badge blue">Social Impact</span>
                         </div>
-                        <a href="https://github.com/kiramman-mp3/CalcuRescue" class="project-link" target="_blank">Ver Repositorio &rarr;</a>
+                        <div class="project-actions">
+                            <a href="https://github.com/kiramman-mp3/CalcuRescue" class="project-link"
+                                target="_blank">Ver Repositorio &rarr;</a>
+                        </div>
                     </article>
                     <article class="content-card project-card reveal">
                         <h3>WikiCraft</h3>
-                        <p>Plataforma interactiva tipo Wiki con temática inmersiva de Minecraft. Enfoque total en UX/UI dinámico.</p>
+                        <p>Plataforma interactiva tipo Wiki con temática inmersiva de Minecraft. Enfoque total en UX/UI
+                            dinámico.</p>
                         <div class="badge-group">
                             <span class="badge">UI/UX</span>
                             <span class="badge blue">Creative</span>
                         </div>
-                        <a href="https://github.com/kiramman-mp3/WikiCraft" class="project-link" target="_blank">Ver Repositorio &rarr;</a>
+                        <div class="project-actions">
+                            <a href="https://github.com/kiramman-mp3/WikiCraft" class="project-link"
+                                target="_blank">Repositorio &rarr;</a>
+                            <a href="https://kiramman-mp3.github.io/WikiCraft/" class="project-link"
+                                target="_blank">Visitar Página &rarr;</a>
+                        </div>
                     </article>
                     <article class="content-card project-card reveal">
                         <h3>Node-Auth System</h3>
-                        <p>Middleware y arquitectura de autenticación robusta para aplicaciones escalables e infraestructuras seguras.</p>
+                        <p>Middleware y arquitectura de autenticación robusta para aplicaciones escalables e
+                            infraestructuras seguras.</p>
                         <div class="badge-group">
                             <span class="badge">Node.js</span>
                             <span class="badge blue">Security</span>
                         </div>
-                        <a href="https://github.com/kiramman-mp3/Sistema-De-Gestion-Auth" class="project-link" target="_blank">Ver Repositorio &rarr;</a>
+                        <div class="project-actions">
+                            <a href="https://github.com/kiramman-mp3/Sistema-De-Gestion-Auth" class="project-link"
+                                target="_blank">Ver Repositorio &rarr;</a>
+                        </div>
                     </article>
                 </div>
 
@@ -170,30 +291,42 @@
                 <div class="project-grid">
                     <article class="content-card project-card reveal">
                         <h3>Gestión Hospitalaria AD</h3>
-                        <p>Sistema integral para la administración descentralizada de entornos hospitalarios y expedientes médicos.</p>
+                        <p>Sistema integral para la administración descentralizada de entornos hospitalarios y
+                            expedientes médicos.</p>
                         <div class="badge-group">
                             <span class="badge">TypeScript</span>
                             <span class="badge blue">Enterprise</span>
                         </div>
-                        <a href="https://github.com/kiramman-mp3/AD-GestionHospitalaria" class="project-link" target="_blank">Ver Repositorio &rarr;</a>
+                        <div class="project-actions">
+                            <a href="https://github.com/kiramman-mp3/AD-GestionHospitalaria" class="project-link"
+                                target="_blank">Ver Repositorio &rarr;</a>
+                        </div>
                     </article>
                     <article class="content-card project-card reveal">
                         <h3>Combustible-SKT</h3>
-                        <p>Herramienta industrial para la gestión y control de suministro de combustible y logística avanzada.</p>
+                        <p>Herramienta industrial para la gestión y control de suministro de combustible y logística
+                            avanzada.</p>
                         <div class="badge-group">
                             <span class="badge">Java</span>
                             <span class="badge blue">Industrial</span>
                         </div>
-                        <a href="https://github.com/kiramman-mp3/Combustibl-SKT" class="project-link" target="_blank">Ver Repositorio &rarr;</a>
+                        <div class="project-actions">
+                            <a href="https://github.com/kiramman-mp3/Combustibl-SKT" class="project-link"
+                                target="_blank">Ver Repositorio &rarr;</a>
+                        </div>
                     </article>
                     <article class="content-card project-card reveal">
                         <h3>Event Manager FISEI</h3>
-                        <p>Plataforma institucional para la organización de eventos académicos en la facultad de ingeniería.</p>
+                        <p>Plataforma institucional para la organización de eventos académicos en la facultad de
+                            ingeniería.</p>
                         <div class="badge-group">
                             <span class="badge">PHP</span>
                             <span class="badge blue">Academic</span>
                         </div>
-                        <a href="https://github.com/kiramman-mp3/Sistema-de-gestion-FISEI" class="project-link" target="_blank">Ver Repositorio &rarr;</a>
+                        <div class="project-actions">
+                            <a href="https://github.com/kiramman-mp3/Sistema-de-gestion-FISEI" class="project-link"
+                                target="_blank">Ver Repositorio &rarr;</a>
+                        </div>
                     </article>
                 </div>
             </div>
@@ -203,34 +336,37 @@
         <section class="section" id="certifications">
             <div class="section-inner">
                 <h2 class="section-title reveal"><span>Certificaciones</span></h2>
-                
+
                 <article class="cert-block reveal">
                     <div class="cert-text">
                         <h3>Full Stack Open – Helsinki</h3>
-                        <p>Especialización en desarrollo web de alto nivel (React/Node). Enfoque en testing y arquitecturas Full-stack escalables.</p>
+                        <p>Especialización en desarrollo web de alto nivel (React/Node). Enfoque en testing y
+                            arquitecturas Full-stack escalables.</p>
                     </div>
                     <div class="cert-img">
-                        <img src="fullstack.png" alt="Full Stack Open Helsinki">
+                        <img src="assets/fullstack.png" alt="Full Stack Open Helsinki">
                     </div>
                 </article>
 
                 <article class="cert-block reverse reveal">
                     <div class="cert-text">
                         <h3>Cisco - Introducción a IoT</h3>
-                        <p>Maestría en la interconexión de dispositivos y protocolos de comunicación para la nueva era del Internet de las Cosas.</p>
+                        <p>Maestría en la interconexión de dispositivos y protocolos de comunicación para la nueva era
+                            del Internet de las Cosas.</p>
                     </div>
                     <div class="cert-img">
-                        <img src="cisco2.png" alt="Cisco IoT">
+                        <img src="assets/cisco2.png" alt="Cisco IoT">
                     </div>
                 </article>
 
                 <article class="cert-block reveal">
                     <div class="cert-text">
                         <h3>Cisco - Seguridad de Red</h3>
-                        <p>Blindaje de infraestructuras críticas y análisis proactivo de amenazas en entornos de red hostiles.</p>
+                        <p>Blindaje de infraestructuras críticas y análisis proactivo de amenazas en entornos de red
+                            hostiles.</p>
                     </div>
                     <div class="cert-img">
-                        <img src="cisco1.png" alt="Cisco Security">
+                        <img src="assets/cisco1.png" alt="Cisco Security">
                     </div>
                 </article>
             </div>
@@ -240,45 +376,87 @@
     <footer>
         <div class="section-inner">
             <p>Johan Rodríguez | Software Engineer @ FISEI-UTA</p>
-            <p>Ambato, Ecuador &bull; <a href="mailto:jrodriguez0612@uta.edu.ec">jrodriguez0612@uta.edu.ec</a></p>
+            <p>Quero, Ecuador &bull; <a href="mailto:jrodriguez0612@uta.edu.ec">jrodriguez0612@uta.edu.ec</a></p>
         </div>
     </footer>
 
     <a id="whatsapp-button" class="whatsapp-button" href="#" target="_blank" rel="noopener" aria-label="WhatsApp">
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M20.52 3.48A11.88 11.88 0 0012 0C5.373 0 .028 5.345 0 12c0 2.11.55 4.18 1.6 6.01L0 24l6.25-1.62A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12 0-3.2-1.25-6.12-3.48-8.52z" fill="#fff" />
-            <path d="M17.07 14.6c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15s-.77.97-.94 1.17c-.17.2-.34.22-.63.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.76-1.66-2.06-.17-.3-.02-.46.13-.61.13-.12.3-.32.45-.48.15-.16.2-.27.3-.45.1-.18.05-.34-.02-.48-.07-.13-.67-1.62-.92-2.22-.24-.58-.48-.5-.66-.51l-.56-.01c-.18 0-.48.07-.73.34s-.96.94-.96 2.29 1 2.66 1.14 2.84c.14.18 1.96 3 4.75 4.21 3.32 1.46 3.32 0.97 3.92.91.6-.06 1.93-.79 2.2-1.55.27-.76.27-1.41.19-1.55-.08-.14-.27-.22-.57-.37z" fill="#25D366" />
+            <path
+                d="M20.52 3.48A11.88 11.88 0 0012 0C5.373 0 .028 5.345 0 12c0 2.11.55 4.18 1.6 6.01L0 24l6.25-1.62A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12 0-3.2-1.25-6.12-3.48-8.52z"
+                fill="#fff" />
+            <path
+                d="M17.07 14.6c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15s-.77.97-.94 1.17c-.17.2-.34.22-.63.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.76-1.66-2.06-.17-.3-.02-.46.13-.61.13-.12.3-.32.45-.48.15-.16.2-.27.3-.45.1-.18.05-.34-.02-.48-.07-.13-.67-1.62-.92-2.22-.24-.58-.48-.5-.66-.51l-.56-.01c-.18 0-.48.07-.73.34s-.96.94-.96 2.29 1 2.66 1.14 2.84c.14.18 1.96 3 4.75 4.21 3.32 1.46 3.32 0.97 3.92.91.6-.06 1.93-.79 2.2-1.55.27-.76.27-1.41.19-1.55-.08-.14-.27-.22-.57-.37z"
+                fill="#25D366" />
         </svg>
     </a>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            // Reveal Animation
             const observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) entry.target.classList.add('active');
+                });
             }, observerOptions);
-            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+            document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-            const sections = document.querySelectorAll('section, header');
+            // Navigation Indicator Logic
             const navLinks = document.querySelectorAll('.nav-links a');
+            const indicator = document.querySelector('.nav-indicator');
+            const sections = document.querySelectorAll('section, header');
+
+            function updateIndicator(activeLink) {
+                if (!activeLink || !indicator) return;
+
+                const rect = activeLink.getBoundingClientRect();
+                const parentRect = activeLink.parentElement.getBoundingClientRect();
+
+                indicator.style.left = `${rect.left - parentRect.left}px`;
+                indicator.style.width = `${rect.width}px`;
+            }
+
+            // Sync with Scroll
             window.addEventListener('scroll', () => {
                 let current = '';
                 sections.forEach(section => {
                     const sectionTop = section.offsetTop;
                     const sectionHeight = section.clientHeight;
-                    if (pageYOffset >= (sectionTop - sectionHeight / 3)) current = section.getAttribute('id');
+                    if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
+                        current = section.getAttribute('id');
+                    }
                 });
+
                 navLinks.forEach(a => {
                     a.classList.remove('active');
-                    if (a.getAttribute('href').includes(current)) a.classList.add('active');
+                    if (a.getAttribute('href').includes(current)) {
+                        a.classList.add('active');
+                        updateIndicator(a);
+                    }
                 });
             });
 
+            // Initial call and Resize
+            setTimeout(() => {
+                const initialActive = document.querySelector('.nav-links a.active');
+                if (initialActive) updateIndicator(initialActive);
+            }, 100);
+
+            window.addEventListener('resize', () => {
+                const active = document.querySelector('.nav-links a.active');
+                if (active) updateIndicator(active);
+            });
+
+            // WhatsApp Handling
             const phone = '+593961957956';
             const message = 'Hola Johan, vi tu portafolio tecnológico y me gustaría contactarte.';
             const btn = document.getElementById('whatsapp-button');
-            if (phone && phone !== 'REPLACE_WITH_PHONE') btn.href = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-            else btn.style.display = 'none';
+            if (phone && phone !== 'REPLACE_WITH_PHONE') {
+                btn.href = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+            } else {
+                btn.style.display = 'none';
+            }
         });
     </script>
 </body>
